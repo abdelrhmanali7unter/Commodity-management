@@ -39,10 +39,10 @@
 
         <div class="outputs">
             <div class="searchBlock">
-                <input type="text" id="search" placeholder="search">
+                <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="search">
                 <div class="btnsearch">
-                    <button id="searchtitle">Search By Title</button>
-                    <button id="searchcategory">Search By Category</button>
+                    <button onclick="getSearchMood(this.id)" id="searchtitle">Search By Title</button>
+                    <button onclick="getSearchMood(this.id)" id="searchcategory">Search By Category</button>
                 </div>
 
                 <div id="delateAll"></div>
@@ -52,15 +52,15 @@
                 <table>
                     <tr>
                         <th>id</th>
-                        <th>title</th>
-                        <th>price</th>
-                        <th>taxes</th>
-                        <th>ads</th>
-                        <th>descount</th>
-                        <th>total</th>
-                        <th>category</th>
-                        <th>update</th>
-                        <th>delete</th>
+                        <th>العنوان</th>
+                        <th>السعر</th>
+                        <th>الضرائب</th>
+                        <th>الأعلانات</th>
+                        <th>الخصم</th>
+                        <th>الأجمالي</th>
+                        <th>الفئه</th>
+                        <th>تحديث</th>
+                        <th>حذف</th>
                     </tr>
                 </table>
             </tbody>
